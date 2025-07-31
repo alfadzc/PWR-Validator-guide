@@ -18,9 +18,17 @@ Welcome to the PWR Chain inaugural testnet! This guide helps you set up a valida
 
 ---
 
+```markdown
 ## 🖥️ Setup on Ubuntu Server
 
 ### 🔹 Step 1: Update OS
 ```bash
 sudo apt update && sudo apt-get upgrade -y
+
+### 🔹 Step 2: Install Java
+```bash
+sudo apt install default-jdk -y
+
+
+
 
