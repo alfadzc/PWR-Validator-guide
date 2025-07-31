@@ -18,7 +18,7 @@ Welcome to the PWR Chain inaugural testnet! This guide helps you set up a valida
 
 ## 🖥️ Setup on Ubuntu Server
 
-## # Step 1: Update OS
+## # Step 1️1: Update OS
 ```
 sudo apt update && sudo apt-get upgrade -y
 ```
@@ -76,6 +76,8 @@ java -jar validator.jar get-address password
 ```
 tail -n 1000 nohup.out -f
 ```
+## 🌐 Check your Validator on PWR Chain Explorer: https://explorer.pwrlabs.io
+
 ## ✨Congratulations, you've now set up and run a PWR Chain validator node!
 
 # #FAGs
