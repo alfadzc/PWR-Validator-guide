@@ -66,6 +66,7 @@ nohup sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar --ip <YOUR
 java -jar validator.jar get-address password
 ```
 ## # Step 8: Become a Validator Node
+#### # Join Discord: https://discord.gg/jGDMbhZt
 #### # Register your Validator: https://docs.google.com/forms/d/1ImUgk8JaKCwJR-7xiBNaA8-mb604CYdSKJfMRHacA60/viewform?edit_requested=true&pli=1
 #### # Initially, your node will synchronize with the blockchain but will not assume validator responsibilities until it possesses staked PWR Coins.
 #### # To obtain sufficient PWR Coins for staking, apply to become a testnet validator. Once approved, you can use our discord bot to claim 100k PWR to stake.
