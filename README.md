@@ -1,5 +1,5 @@
 # PWR-Validator-guide
-Guide to set up PWR Chain Validator
+## Step by Step Guide to set up PWR Chain Validator
 # ⚡ PWR Chain Validator Node 
 
 Welcome to the PWR Chain inaugural testnet! This guide helps you set up a validator node
@@ -85,7 +85,7 @@ tail -n 1000 nohup.out -f
 java -jar validator.jar get-seed-phrase password
 ```
 
-## # Importing an Existing Wallet
+## 🔄 Importing an Existing Wallet
 #### # To import your old wallet using this update
 #### # Replace <YOUR_PASSWORD> <SEED_PHRASE> with your password and seed-phrase
 ```
