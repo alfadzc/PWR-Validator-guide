@@ -18,7 +18,7 @@ Welcome to the PWR Chain inaugural testnet! This guide helps you set up a valida
 
 ## 🖥️ Setup on Ubuntu Server
 
-## # Step 1️1: Update OS
+## # Step 1: Update OS
 ```
 sudo apt update && sudo apt-get upgrade -y
 ```
@@ -44,7 +44,7 @@ sudo iptables -A INPUT -p tcp --dport 9864 -j ACCEPT
 sudo iptables -A INPUT -p udp --dport 7621 -j ACCEPT
 sudo netfilter-persistent save
 ```
-#### ⚠️NOTE: On cloud providers, open ports in the firewall/security group too.
+- ⚠️NOTE: On cloud providers, open ports in the firewall/security group too.
 ## # Step 4: Install Validator node software and config file
 ```
 wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.63.3/validator.jar
@@ -55,26 +55,26 @@ wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
 echo "your-password-here" > password
 ```
 ## # Step 6: Run PWR Node
-#### # Replace <YOUR_SERVER_IP> with your server's actual IP.
+- Replace <YOUR_SERVER_IP> with your server's actual IP.
 ```
 nohup sudo java --enable-native-access=ALL-UNNAMED -jar validator.jar --ip <YOUR_SERVER_IP> --password password &
 ```
-#### ⚠️NOTE: Make sure ports 8085 and 8231 are open for TCP.
+- ⚠️NOTE: Make sure ports 8085 and 8231 are open for TCP.
 ## # Step 7: 
-#### # Get Your PWR Validator Address
+- Get Your PWR Validator Address
 ```
 java -jar validator.jar get-address password
 ```
 
 ## # Step 8: Become a Validator Node
-#### # Join Discord: https://discord.gg/jGDMbhZt
-#### # Register your Validator: https://docs.google.com/forms/d/1ImUgk8JaKCwJR-7xiBNaA8-mb604CYdSKJfMRHacA60/viewform?edit_requested=true&pli=1
-#### # Initially, your node will synchronize with the blockchain but will not assume validator responsibilities until it possesses staked PWR Coins.
-#### # To obtain sufficient PWR Coins for staking, apply to become a testnet validator. Once approved, you can use our discord bot to claim 100k PWR to stake.
-#### # After claiming your coins, your node will initiate a transaction to enlist as a validator.
+- Join Discord: https://discord.gg/jGDMbhZt
+- Register your Validator: https://docs.google.com/forms/d/1ImUgk8JaKCwJR-7xiBNaA8-mb604CYdSKJfMRHacA60/viewform?edit_requested=true&pli=1
+- Initially, your node will synchronize with the blockchain but will not assume validator responsibilities until it possesses staked PWR Coins.
+- To obtain sufficient PWR Coins for staking, apply to become a testnet validator. Once approved, you can use our discord bot to claim 100k PWR to stake.
+- After claiming your coins, your node will initiate a transaction to enlist as a validator.
 ## # Step 9: Checking your nodes logs
 
-#### # If you wish to check your nodes logs, you can do so using the following command:
+- If you wish to check your nodes logs, you can do so using the following command:
 ```
 tail -n 1000 nohup.out -f
 ```
@@ -91,16 +91,15 @@ java -jar validator.jar get-seed-phrase password
 ```
 
 ## 🔄 Importing an Existing Wallet
-#### # To import your old wallet using this update
-#### # Replace <YOUR_PASSWORD> <SEED_PHRASE> with your password and seed-phrase
+- To import your old wallet using this update
+- Replace <YOUR_PASSWORD> <SEED_PHRASE> with your password and seed-phrase
 ```
 java -jar validator.jar import-seed-phrase <YOUR_PASSWORD> <SEED_PHRASE>
 ```
-#### # Example:
+- Example:
 ```
 java -jar validator.jar import-seed-phrase password public neither spoon scare diagram knife fragile road kit guess crucial batch
 ```
-
 
 
 
