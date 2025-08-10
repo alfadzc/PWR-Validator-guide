@@ -47,7 +47,7 @@ sudo netfilter-persistent save
 - ⚠️NOTE: On cloud providers, open ports in the firewall/security group too.
 ## # Step 4: Install Validator node software and config file
 ```
-wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.63.3/validator.jar
+wget https://github.com/pwrlabs/PWR-Validator/releases/download/15.63.27/validator.jar
 wget https://github.com/pwrlabs/PWR-Validator/raw/refs/heads/main/config.json
 ```
 ## # Step 5: Setup your password file
